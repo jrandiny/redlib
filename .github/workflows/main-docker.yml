@@ -5,6 +5,7 @@ on:
     workflows: ["Release Build"]
     types:
       - completed
+  workflow_dispatch:
 env:
   REGISTRY_IMAGE: ghcr.io/jrandiny/redlib
 
