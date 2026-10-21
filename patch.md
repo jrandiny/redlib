@@ -7,6 +7,7 @@ Three local changes are kept on top:
 ## 1. CMAF video support — `a3abe21`
 
 Original commit `174cd14` by Mateusz Jabłoński, re-applied onto the new base.
+Upstream PR: https://github.com/redlib-org/redlib/pull/506
 
 - `src/main.rs`: split `/vid/:id/:size` into `/vid/:id/dash/:size` → `DASH_{size}` and `/vid/:id/cmaf/:size` → `CMAF_{size}`
 - `src/utils.rs`: `REGEX_URL_VIDEOS` matches `(DASH|CMAF)_…`, `format_url` emits `/vid/{id}/{dash|cmaf}/{size}.mp4`, tests updated
